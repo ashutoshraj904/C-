@@ -1,27 +1,16 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int n,no=2;
-    bool prime=1;
-    cout<<"enter no ";
+    int n;
     cin>>n;
-    if (n<=1){
-        cout<<"NOT PRIME";
-        return 0;
-    }
-//    for(no;no<=n/2;no++)
-while(no<n)
-    {   
-        if(n%no==0)
-        {
-            cout<<"not prime";
-           prime=0;
-           break;
-        }else{no++;}
-    }
-    if(prime)
-        {cout<<"Prime";
+    int i=2;
+    while(i<n){
+        if(n%i==0){
+            cout<<"not prime"<<endl;
+            return 0;
         }
-        return 0;  
+        i++;
+    }
+    cout<<"Prime"<<endl;
+    return 0;
 }
-
